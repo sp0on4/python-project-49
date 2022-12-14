@@ -13,4 +13,8 @@ brain-games and brain-even
 
 brain-calc
 
+<<<<<<< HEAD
 [![asciicast](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ.svg)](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ)
+=======
+[![asciicast](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ.svg)](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ)
+>>>>>>> origin
