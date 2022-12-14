@@ -10,3 +10,7 @@ How to install:
 brain-games and brain-even
 
 [![asciicast](https://asciinema.org/a/kPw7dAoeqwao4uLvKGV7KtA5p.svg)](https://asciinema.org/a/kPw7dAoeqwao4uLvKGV7KtA5p)
+
+brain-calc
+
+[![asciicast](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ.svg)](https://asciinema.org/a/8VUQCkXFa1ZoaAUyKvFxhkFTQ)
