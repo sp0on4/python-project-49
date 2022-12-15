@@ -16,7 +16,7 @@ def progression_func():
         result = []
         for num in range(start, stop, step):
             result.append(num)
-        index = randint(0, len(result)-1)
+        index = randint(0, len(result) - 1)
         true_answer = str(result[index])
         result[index] = '..'
         print('Question:', " ".join(map(str, result)))

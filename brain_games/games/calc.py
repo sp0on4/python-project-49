@@ -13,7 +13,7 @@ def calc_func():
         num1 = randint(1, 15)
         num2 = randint(1, 15)
         lst = ['+', '-', '*']
-        index = randint(0, len(lst)-1)
+        index = randint(0, len(lst) - 1)
         if index == 0:
             print('Question:', num1, lst[index], num2)
             answer = prompt.string('Your answer: ')
