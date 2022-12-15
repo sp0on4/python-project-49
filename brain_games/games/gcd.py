@@ -1,30 +1,18 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
 from random import randint
-import prompt
 import math
 
-name = welcome_user()
+
+MANUAL = 'Find the greatest common divisor of given numbers.'
+START_VALUE1 = 1
+FINISH_VALUE1 = 15
+START_VALUE2 = 1
+FINISH_VALUE2 = 15
 
 
-def gcd_func():
-    print('Find the greatest common divisor of given numbers.')
-
-    for _ in range(3):
-        num1 = randint(1, 15)
-        num2 = randint(1, 15)
-        print('Question:', num1, num2)
-        answer = prompt.string('Your answer: ')
-        true_answer = str(math.gcd(num1, num2))
-        if true_answer == answer:
-            print('Correct!')
-        else:
-            game_end(answer, true_answer, name)
-            return
-    print(f'Congratulations, {name}!')
-
-
-def game_end(answer, true_answer, name):
-    print(f"'{answer}' is wrong answer ;(. "
-          f"Correct answer was '{true_answer}'.")
-    print(f"Let's try again, {name}!")
+def brain_func():
+    num1 = randint(START_VALUE1, FINISH_VALUE1)
+    num2 = randint(START_VALUE2, FINISH_VALUE2)
+    question = f'{num1} {num2}'
+    true_answer = str(math.gcd(num1, num2))
+    return question, true_answer

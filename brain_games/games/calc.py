@@ -1,40 +1,24 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
 from random import randint
-import prompt
-
-name = welcome_user()
 
 
-def calc_func():
-    print('What is the result of the expression?')
-
-    for _ in range(3):
-        num1 = randint(1, 15)
-        num2 = randint(1, 15)
-        lst = ['+', '-', '*']
-        index = randint(0, len(lst) - 1)
-        if index == 0:
-            print('Question:', num1, lst[index], num2)
-            answer = prompt.string('Your answer: ')
-            true_answer = str(num1 + num2)
-        if index == 1:
-            print('Question:', num1, lst[index], num2)
-            answer = prompt.string('Your answer: ')
-            true_answer = str(num1 - num2)
-        if index == 2:
-            print('Question:', num1, lst[index], num2)
-            answer = prompt.string('Your answer: ')
-            true_answer = str(num1 * num2)
-        if true_answer == answer:
-            print('Correct!')
-        else:
-            game_end(answer, true_answer, name)
-            return
-    print(f'Congratulations, {name}!')
+MANUAL = 'What is the result of the expression?'
+START_VALUE1 = 1
+FINISH_VALUE1 = 15
+START_VALUE2 = 1
+FINISH_VALUE2 = 15
+LIST_OPERATIONS = ['+', '-', '*']
 
 
-def game_end(answer, true_answer, name):
-    print(f"'{answer}' is wrong answer ;(. "
-          f"Correct answer was '{true_answer}'.")
-    print(f"Let's try again, {name}!")
+def brain_func():
+    num1 = randint(START_VALUE1, FINISH_VALUE1)
+    num2 = randint(START_VALUE2, FINISH_VALUE2)
+    index = randint(0, len(LIST_OPERATIONS) - 1)
+    question = f'{num1} {LIST_OPERATIONS[index]} {num2}'
+    if index == 0:
+        true_answer = str(num1 + num2)
+    if index == 1:
+        true_answer = str(num1 - num2)
+    if index == 2:
+        true_answer = str(num1 * num2)
+    return question, true_answer

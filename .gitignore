@@ -1,2 +1,6 @@
 # created by virtualenv automatically
-.venv
+.venv/
+__pycache__
+dist
+*.save
+*.рус
