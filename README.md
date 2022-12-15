@@ -15,13 +15,10 @@ After installing the package, type in the command line (bash Linux):
 
 ## Instalation
 
-_This is an educational project_
+git clone git@github.com:sp0on4/python-project-49.git
+make all
 
-```sh
-pip install <package>
-```
-
-[![asciicast](https://asciinema.org/a/AC30GYiUuNMc1lSNt7HVTeVsM.svg)](https://asciinema.org/a/AC30GYiUuNMc1lSNt7HVTeVsM)
+## Brain games
 
 brain-games and brain-even
 

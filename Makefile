@@ -14,3 +14,8 @@ brain-even:
 	poetry run brain-even
 update:
 	python3 -m pip install --user --force-reinstall dist/*.whl
+all:
+	poetry install
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user dist/*.whl

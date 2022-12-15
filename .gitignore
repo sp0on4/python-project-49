@@ -1,6 +1,7 @@
 # created by virtualenv automatically
 .venv/
 __pycache__
-dist
+dist/
+!bower_components/**/dist/
 *.save
 *.рус
