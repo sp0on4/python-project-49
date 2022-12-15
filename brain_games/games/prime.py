@@ -2,20 +2,21 @@
 from brain_games.cli import welcome_user
 from random import randint
 import prompt
-import math
 
 name = welcome_user()
 
 
-def gcd_func():
-    print('Find the greatest common divisor of given numbers.')
+def prime_func():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(3):
-        num1 = randint(1, 15)
-        num2 = randint(1, 15)
-        print('Question:', num1, num2)
+        num = randint(1, 20)
+        true_answer = 'yes'
+        for del_num in range(2, num//2+1):
+            if num % del_num == 0:
+                true_answer = 'no'
+        print('Question:', num)
         answer = prompt.string('Your answer: ')
-        true_answer = str(math.gcd(num1, num2))
         if true_answer == answer:
             print('Correct!')
         else:
