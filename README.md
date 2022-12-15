@@ -16,6 +16,7 @@ After installing the package, type in the command line (bash Linux):
 ## Instalation
 
 git clone git@github.com:sp0on4/python-project-49.git
+
 make all
 
 ## Brain games
