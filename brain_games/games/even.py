@@ -9,8 +9,8 @@ FINISH_VALUE = 30
 
 def brain_func():
     question = randint(START_VALUE, FINISH_VALUE)
+    true_answer = 'no'
     if question % 2 == 0:
         true_answer = 'yes'
-    else:
-        true_answer = 'no'
+        return (question, true_answer)
     return (question, true_answer)

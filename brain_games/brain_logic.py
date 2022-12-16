@@ -5,13 +5,14 @@ import prompt
 CYCLE_COUNT = 3
 
 
-def game_logic(brain_func, MANUAL):
+def game_logic(game_module):
+    question, answer = game_module.brain_func()
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
-    print(MANUAL)
+    print(game_module.MANUAL)
     for i in range(CYCLE_COUNT):
-        [question, true_answer] = brain_func()
+        [question, true_answer] = game_module.brain_func()
         print('Question:', question)
         answer = ''
         print('Your answer: ', end='')
