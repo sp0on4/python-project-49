@@ -6,7 +6,6 @@ CYCLE_COUNT = 3
 
 
 def game_logic(game_module):
-    question, answer = game_module.brain_func()
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
@@ -14,9 +13,7 @@ def game_logic(game_module):
     for i in range(CYCLE_COUNT):
         [question, true_answer] = game_module.brain_func()
         print('Question:', question)
-        answer = ''
-        print('Your answer: ', end='')
-        answer = input()
+        answer = prompt.string('Your answer: ')
         if answer == str(true_answer):
             print('Correct!')
         else:
