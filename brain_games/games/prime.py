@@ -2,7 +2,7 @@
 from random import randint
 
 
-MANUAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START_VALUE = 2
 FINISH_VALUE = 20
 
@@ -10,7 +10,11 @@ FINISH_VALUE = 20
 def brain_func():
     question = randint(START_VALUE, FINISH_VALUE)
     true_answer = 'yes'
-    for del_num in range(2, question // 2 + 1):
-        if question % del_num == 0:
-            true_answer = 'no'
+    if get_true_answer(question):
+        return question, true_answer
     return question, true_answer
+
+
+def get_true_answer(number):
+    for del_num in range(2, number // 2 + 1):
+        return number % del_num == 0

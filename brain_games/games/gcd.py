@@ -3,7 +3,7 @@ from random import randint
 import math
 
 
-MANUAL = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 START_VALUE1 = 1
 FINISH_VALUE1 = 15
 START_VALUE2 = 1

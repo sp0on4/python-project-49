@@ -9,7 +9,7 @@ def engine(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game_module.MANUAL)
+    print(game_module.RULES)
     for i in range(CYCLE_COUNT):
         [question, true_answer] = game_module.brain_func()
         print('Question:', question)
