@@ -17,7 +17,7 @@ def brain_func():
     question = f'{num1} {operation} {num2}'
     true_answer = get_true_answer(operation, num1, num2)
     return question, true_answer
- 
+
 
 def get_operation():
     return choice(LIST_OPERATIONS)
