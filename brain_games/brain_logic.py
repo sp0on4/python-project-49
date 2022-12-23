@@ -8,17 +8,17 @@ CYCLE_COUNT = 3
 def game_logic(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
+    print(f'Hello, {name}!')
     print(game_module.MANUAL)
     for i in range(CYCLE_COUNT):
         [question, true_answer] = game_module.brain_func()
         print('Question:', question)
         answer = prompt.string('Your answer: ')
-        if answer == str(true_answer):
+        if answer == true_answer:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. \
 Correct answer was '{true_answer}'.")
-            print("Let's try again, {}!".format(name))
+            print(f"Let's try again, {name}!")
             return
-    print('Congratulations, {}!'.format(name))
+    print(f'Congratulations, {name}!')
