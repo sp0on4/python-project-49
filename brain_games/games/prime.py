@@ -11,6 +11,7 @@ def brain_func():
     question = randint(START_VALUE, FINISH_VALUE)
     true_answer = 'yes'
     if get_true_answer(question):
+        true_answer = 'no'
         return question, true_answer
     return question, true_answer
 
