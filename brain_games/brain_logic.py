@@ -5,7 +5,7 @@ import prompt
 CYCLE_COUNT = 3
 
 
-def engine(game_module):
+def generate_a_game(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
