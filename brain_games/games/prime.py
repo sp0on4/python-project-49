@@ -19,4 +19,4 @@ def brain_func():
 def is_prime(number):
     for del_num in range(2, number // 2 + 1):
         if number % del_num == 0:
-            return del_num
+            return True

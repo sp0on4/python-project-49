@@ -16,7 +16,7 @@ def brain_func():
     operation = get_operation()
     question = f'{num1} {operation} {num2}'
     true_answer = get_true_answer(operation, num1, num2)
-    return question, true_answer
+    return question, str(true_answer)
 
 
 def get_operation():
@@ -25,11 +25,8 @@ def get_operation():
 
 def get_true_answer(operation, num1, num2):
     if operation == '+':
-        true_answer = str(num1 + num2)
-        return true_answer
+        return num1 + num2
     if operation == '-':
-        true_answer = str(num1 - num2)
-        return true_answer
+        return num1 - num2
     if operation == '*':
-        true_answer = str(num1 * num2)
-        return true_answer
+        return num1 * num2
