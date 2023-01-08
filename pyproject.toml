@@ -4,8 +4,16 @@ version = "0.1.0"
 description = "brain-games"
 authors = ["Nikita Kashmanov <iipabauapyka@gmail.com>"]
 readme = "README.md"
-packages = [
-  { include = "brain_games" },
+packages = [{include = "brain_games"}]
+repository = "https://github.com/sp0on4/python-project-49"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Students",
+    "Intended Audience :: Information Technology",
+    "Operating System :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython"
 ]
 
 
