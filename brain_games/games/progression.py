@@ -11,15 +11,6 @@ START_VALUE3 = 3
 FINISH_VALUE3 = 4
 
 
-def brain_func():
-    start = randint(START_VALUE1, FINISH_VALUE1)
-    stop = randint(START_VALUE2, FINISH_VALUE2)
-    step = randint(START_VALUE3, FINISH_VALUE3)
-    list_progression = get_progression(start, stop, step)
-    true_answer, question = get_question(list_progression)
-    return question, true_answer
-
-
 def get_progression(start, stop, step):
     result = []
     for num in range(start, stop, step):
@@ -33,3 +24,12 @@ def get_question(result):
     result[index] = '..'
     question = " ".join(map(str, result))
     return true_answer, question
+
+
+def brain_func():
+    start = randint(START_VALUE1, FINISH_VALUE1)
+    stop = randint(START_VALUE2, FINISH_VALUE2)
+    step = randint(START_VALUE3, FINISH_VALUE3)
+    list_progression = get_progression(start, stop, step)
+    true_answer, question = get_question(list_progression)
+    return question, true_answer

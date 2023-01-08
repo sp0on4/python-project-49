@@ -10,15 +10,6 @@ FINISH_VALUE2 = 15
 LIST_OPERATIONS = ['+', '-', '*']
 
 
-def brain_func():
-    num1 = randint(START_VALUE1, FINISH_VALUE1)
-    num2 = randint(START_VALUE2, FINISH_VALUE2)
-    operation = get_operation()
-    question = f'{num1} {operation} {num2}'
-    true_answer = get_true_answer(operation, num1, num2)
-    return question, str(true_answer)
-
-
 def get_operation():
     return choice(LIST_OPERATIONS)
 
@@ -30,3 +21,12 @@ def get_true_answer(operation, num1, num2):
         return num1 - num2
     if operation == '*':
         return num1 * num2
+
+
+def brain_func():
+    num1 = randint(START_VALUE1, FINISH_VALUE1)
+    num2 = randint(START_VALUE2, FINISH_VALUE2)
+    operation = get_operation()
+    question = f'{num1} {operation} {num2}'
+    true_answer = get_true_answer(operation, num1, num2)
+    return question, str(true_answer)
